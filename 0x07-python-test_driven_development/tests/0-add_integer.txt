@@ -81,3 +81,8 @@ Now let's give it an object that's not defined:
 Now let's do an int and a float:
     >>> add_integer(4, 4.5)
     8
+
+Now let's add negative and positive infinity:
+    >>> add_integer(float('inf'), float('-inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
