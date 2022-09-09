@@ -54,3 +54,8 @@ Now let's try inputting something that is divided by zero:
     >>> add_integer(int(5/0))
     Traceback (most recent call last):
     ZeroDivisionError: division by zero
+
+Now let's try giving it too many arguments:
+    >>> add_integer(5, 4, 7)
+    Traceback (most recent call last):
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
