@@ -39,3 +39,8 @@ Now let's try no input at all:
     >>> add_integer()
     Traceback (most recent call last):
     TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Now let's try None for input:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
