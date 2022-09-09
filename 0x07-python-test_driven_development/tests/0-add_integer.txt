@@ -49,3 +49,8 @@ Now let's try casting a string to an int for input:
     >>> add_integer("potatoes")
     Traceback (most recent call last):
     ValueError: invalid literal for int() with base 10: 'potatoes'
+
+Now let's try inputting something that is divided by zero:
+    >>> add_integer(int(5/0))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
