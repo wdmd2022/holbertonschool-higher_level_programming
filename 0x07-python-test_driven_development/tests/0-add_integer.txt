@@ -1,0 +1,41 @@
+The ``add_integer`` module
+==========================
+
+Using ``add_integer``
+---------------------
+
+This is an example text file in reStructuredText format. First import
+``add_integer`` from the ``add_integer`` module:
+
+    >>> from 0-add_integer import add_integer
+
+Let's start off easy and give it just a single 0 to play with:
+    >>> add_integer(0)
+    98
+
+Next let's ramp up the intensity with two zeros:
+    >>> add_integer(0, 0)
+    0
+
+Let's try a negative number with a positive number:
+    >>> add_integer(-50, 60)
+    10
+
+Now let's try two negative numbers:
+    >>> add_integer(-1, -2)
+    -3
+
+Now let's try a string with an integer:
+    >>> add_integer("cool beans", 9)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Now let's try two strings:
+    >>> add_integer("great", "work")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Now let's try no input at all:
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
