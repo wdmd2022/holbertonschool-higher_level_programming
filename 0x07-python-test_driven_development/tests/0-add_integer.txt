@@ -72,3 +72,12 @@ Now let's try giving it too many arguments:
 Now let's give it two arguments not separated by commas:
     >>> add_integer(i j)
     SyntaxError: invalid syntax
+
+Now let's give it an object that's not defined:
+    >>> add_integer(obj)
+    Traceback (most recent call last):
+    NameError: name 'obj' is not defined
+
+Now let's nest it inside itself:
+    >>>add_integer(add_integer(1, 2), add_integer(4, 5))
+    12
