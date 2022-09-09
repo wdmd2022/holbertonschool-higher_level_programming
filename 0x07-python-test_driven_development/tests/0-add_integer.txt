@@ -4,14 +4,6 @@ The ``add_integer`` module
 Using ``add_integer``
 ---------------------
 
-Write a function that adds 2 integers.
-
-Prototype: def add_integer(a, b=98):
-a and b must be integers or floats, otherwise raise a TypeError exception with the message a must be an integer or b must be an integer
-a and b must be first casted to integers if they are float
-Returns an integer: the addition of a and b
-You are not allowed to import any module
-
 This is an example text file in reStructuredText format. First import
 ``add_integer`` from the ``add_integer`` module:
 
@@ -32,6 +24,10 @@ Let's try a negative number with a positive number:
 Now let's try two negative numbers:
     >>> add_integer(-1, -2)
     -3
+
+Now let's try 2 floats:
+    >>> add_integer(1.5, 1.2)
+    2
 
 Now let's try a string with an integer:
     >>> add_integer("cool beans", 9)
