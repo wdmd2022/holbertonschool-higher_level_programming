@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 add_integer = __import__('0-add_integer').add_integer
 
-print(add_integer(1e300))
-print(add_integer(5))
+print(add_integer(int("booger")))
+"""print(add_integer(5))
 print(add_integer(2))
 print(add_integer(100.3, -2))
 try:
@@ -13,3 +13,4 @@ try:
     print(add_integer(None))
 except Exception as e:
     print(e)
+"""
