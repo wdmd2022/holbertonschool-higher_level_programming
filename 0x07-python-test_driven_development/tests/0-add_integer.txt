@@ -35,6 +35,11 @@ Now let's try two strings:
     Traceback (most recent call last):
     TypeError: a must be an integer
 
+Now let's try having a as an int and b as a string:
+    >>> add_integer(7, "bee")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
 Now let's try no input at all:
     >>> add_integer()
     Traceback (most recent call last):
