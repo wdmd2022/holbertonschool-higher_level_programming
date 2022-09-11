@@ -86,3 +86,7 @@ Now let's add negative and positive infinity:
     >>> add_integer(float('inf'), float('-inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
+
+Now let's try giving it a range of values to add:
+    >>> [add_integer(n, n + 1) for n in range(3)]
+    [1, 3, 5]
