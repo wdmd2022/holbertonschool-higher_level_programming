@@ -46,6 +46,11 @@ Next, with too much input:
     Traceback (most recent call last):
     TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
 
+Almost done, time to pass none:
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
 And lastly, with no input:
     >>> say_my_name()
     Traceback (most recent call last):
