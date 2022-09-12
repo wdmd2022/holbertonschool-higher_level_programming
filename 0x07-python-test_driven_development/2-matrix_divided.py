@@ -2,6 +2,7 @@
 """this module contains a function to divide a matrix.
 """
 
+
 def matrix_divided(matrix, div):
     """this function divides a matrix
 
@@ -22,17 +23,17 @@ def matrix_divided(matrix, div):
     """
     if type(matrix) != list:
         raise TypeError("matrix must be a matrix (list of lists) of \
-            integers/floats")
+integers/floats")
     for member in matrix:
         if type(member) != list:
             raise TypeError("matrix must be a matrix (list of lists) \
-                of integers/floats")
+of integers/floats")
         if len(member) != len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size")
         for i in member:
             if type(i) != int and type(i) != float:
                 raise TypeError("matrix must be a matrix (list of lists) \
-                    of integers/floats")
+of integers/floats")
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
