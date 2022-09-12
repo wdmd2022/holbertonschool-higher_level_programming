@@ -1,0 +1,14 @@
+The ``matrix_divided`` module
+==========================
+
+Using ``matrix_divided``
+---------------------
+
+This is an example test file in text format. First import
+``matrix_divided`` from the ``matrix_divided`` module:
+
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Let's start off easy and give it just a single 0 to play with:
+    >>> matrix_divided(0)
+    98
