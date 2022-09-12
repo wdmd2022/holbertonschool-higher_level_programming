@@ -2,6 +2,7 @@
 """this module contains a function to print a square
 """
 
+
 def print_square(size):
     """this function prints a square w/ side length size
 
