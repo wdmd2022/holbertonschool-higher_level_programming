@@ -55,7 +55,7 @@ Now let's try None for input:
     TypeError: a must be an integer
 
 Now let's try casting a string to an int for input:
-    >>> add_integer("potatoes")
+    >>> add_integer(int("potatoes"))
     Traceback (most recent call last):
     ValueError: invalid literal for int() with base 10: 'potatoes'
 
