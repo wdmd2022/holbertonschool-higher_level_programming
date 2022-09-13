@@ -134,4 +134,6 @@ class Rectangle:
         string_content = string_content.join('#' * self.__width + "\n" for
                                              i in range(self.__height - 1))
         string_content = string_content + ('#' * self.__width)
+        if self.__width == 0 or self.__width == 0:
+            string_content = ""
         return string_content
