@@ -10,7 +10,7 @@ This is an example test file in text format. First import
     >>> say_my_name = __import__("3-say_my_name").say_my_name
 
 Let's start off easy and give it a great first name only:
-    >>> say_my_name("SwizzleBert")
+    >>> say_my_name("SwizzleBert") #doctest: +NORMALIZE_WHITESPACE
     My name is SwizzleBert
 
 Let's start off easy and give it a great first and last name:
