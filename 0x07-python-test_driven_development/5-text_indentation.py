@@ -2,6 +2,7 @@
 """this module contains a function that formats a long string
 """
 
+
 def text_indentation(text):
     """this function formats a long string w/ newlines at '.' ':' or '?'
 
@@ -22,7 +23,7 @@ def text_indentation(text):
                 flag = 1
         if flag == 1:
             if character == "." or character == "?" or character == ":":
-                print("{}{}".format(character, "\n"))    
+                print("{}{}".format(character, "\n"))
                 flag = 0
             else:
                 print("{}".format(character), end="")
