@@ -15,10 +15,11 @@
         int: when getting height or width
     """
 
+
 class Rectangle:
     """this class defines Rectangles
     """
-    
+
     def __init__(self, width=0, height=0):
         """this function instantiates an object of Rectangle class
 
@@ -46,7 +47,7 @@ class Rectangle:
                 raise ValueError("height must be >= 0")
         else:
             raise TypeError("height must be an integer")
-    
+
     @property
     def width(self):
         """getter for width of rectangle
@@ -55,7 +56,7 @@ class Rectangle:
             int: private width attribute
         """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """setter for width of rectangle
@@ -83,7 +84,7 @@ class Rectangle:
             int: private height attribute
         """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """setter for height of rectangle
