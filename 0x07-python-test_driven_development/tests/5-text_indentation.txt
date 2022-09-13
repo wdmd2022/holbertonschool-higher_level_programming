@@ -11,7 +11,7 @@ This is an example test file in text format. First import
 
 Let's start off easy and give it a nice string with no breaks:
     >>> text_indentation("Cool string, friend")
-    Cool string, friend>>>
+    Cool string, friend
 
 That was terrific! Let's give it a non-string argument:
     >>> text_indentation(4)
@@ -21,23 +21,25 @@ That was terrific! Let's give it a non-string argument:
 Okay, now let's give it no argument:
     >>> text_indentation()
     Traceback (most recent call last):
-    TTypeError: text_indentation() missing 1 required positional argument: 'text'
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 And now let's try a string with lots of breaks:
     >>> text_indentation("Wow. Cool function. I love your code. You?")
     Wow.
-
+    <BLANKLINE>
     Cool function.
-
+    <BLANKLINE>
     I love your code.
-
-    You?>>>
+    <BLANKLINE>
+    You?
+    <BLANKLINE>
 
 Let's try just punctuation marks:
     >>> text_indentation("::")
     :
-
+    <BLANKLINE>
     :
+    <BLANKLINE>
 
 And let's give it too many arguments:
     >>> text_indentation("hey:", "you")
