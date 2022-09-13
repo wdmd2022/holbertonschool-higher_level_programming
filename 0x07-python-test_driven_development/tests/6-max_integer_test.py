@@ -37,5 +37,10 @@ class TestMaxInteger(unittest.TestCase):
         sadlist = [-1, -3, -799]
         self.assertEqual(max_integer(sadlist), -1)
 
+    def stringtime(self):
+        """for when a string is entered"""
+        string = "CoolBeanz"
+        self.assertEqual(max_integer(string), z)
+
 if __name__ == '__main__':
     unittest.main()
