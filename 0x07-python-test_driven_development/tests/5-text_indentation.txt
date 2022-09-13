@@ -9,33 +9,37 @@ This is an example test file in text format. First import
 
     >>> text_indentation = __import__("5-text_indentation").text_indentation
 
-Let's start off easy and give it a cute little size:
-    >>> text_indentation(3)
-    ###
-    ###
-    ###
+Let's start off easy and give it a nice string with no breaks:
+    >>> text_indentation("Cool string, friend")
+    Cool string, friend>>>
 
-That was terrific! Let's give it an impossibly short size now:
-    >>> text_indentation(-4)
+That was terrific! Let's give it a non-string argument:
+    >>> text_indentation(4)
     Traceback (most recent call last):
-    ValueError: size must be >= 0
+    TypeError: text must be a string
 
-Okay, now let's confirm that it sends a TypeError for a negative float:
-    >>> text_indentation(-5.77777777777)
-    Traceback (most recent call last):
-    TypeError: size must be an integer
-
-And now let's try an impossibly large one:
-    >>> text_indentation(int(float('inf')))
-    Traceback (most recent call last):
-    OverflowError: cannot convert float infinity to integer
-
-Let's neglect to give it any argument and see what happens:
+Okay, now let's give it no argument:
     >>> text_indentation()
     Traceback (most recent call last):
-    TypeError: text_indentation() missing 1 required positional argument: 'size'
+    TTypeError: text_indentation() missing 1 required positional argument: 'text'
 
-And let's give it too many:
-    >>> text_indentation(4, 5, 6)
+And now let's try a string with lots of breaks:
+    >>> text_indentation("Wow. Cool function. I love your code. You?")
+    Wow.
+
+    Cool function.
+
+    I love your code.
+
+    You?>>>
+
+Let's try just punctuation marks:
+    >>> text_indentation("::")
+    :
+
+    :
+
+And let's give it too many arguments:
+    >>> text_indentation("hey:", "you")
     Traceback (most recent call last):
-    TypeError: text_indentation() takes 1 positional argument but 3 were given
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
