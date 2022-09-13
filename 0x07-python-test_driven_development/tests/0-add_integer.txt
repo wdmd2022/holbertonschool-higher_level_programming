@@ -7,7 +7,7 @@ Using ``add_integer``
 This is an example text file in reStructuredText format. First import
 ``add_integer`` from the ``add_integer`` module:
 
-    >>> from "0-add_integer" import add_integer
+    >>> add_integer = __import__("0-add_integer").add_integer
 
 Let's start off easy and give it just a single 0 to play with:
     >>> add_integer(0)
