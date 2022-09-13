@@ -12,7 +12,7 @@
         TypeError: if height setter receives non-int value
 
     Returns:
-        int: when getting height or width or area or perimeter, str for str
+        int: when getting height/width/area/perimeter, str for str/repr
 
     """
 
@@ -137,3 +137,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             string_content = ""
         return string_content
+
+    def __repr__(self):
+        repstring = "Rectangle(" + str(self.__width) + ", " + \
+                                     str(self.__height) + ")"
+        return repstring
