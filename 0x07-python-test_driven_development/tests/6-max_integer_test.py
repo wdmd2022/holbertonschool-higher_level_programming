@@ -13,9 +13,24 @@ class TestMaxInteger(unittest.TestCase):
         uselesslist = []
         self.assertIsNone(max_integer(uselesslist))
 
+    def onenegative(self):
+        """for when there is one negative num in the list"""
+        oneneglist = [5, -4, 7]
+        self.assertEqual(max_integer(oneneglist), 7)
+
     def testnoargument(self):
         """for when there is no argument passed"""
         self.assertIsNone(max_integer())
+
+    def onenum(self):
+        """for when there is one number in the list"""
+        onenum = [3]
+        self.assertEqual(max_integer(onenum), 3)
+
+    def sonegative(self):
+        """for when all are negative in the list"""
+        neglist = [-1, -3, -5]
+        self.assertEqual(max_integer(neglist), -1)
 
     def orderedlist(self):
         """for when the biggest is last"""
