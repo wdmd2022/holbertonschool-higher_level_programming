@@ -1,3 +1,2 @@
-def copy_list(listy):
-    gotlist = listy[:]
-    return gotlist
+def copy_list(l):
+    return l[:]
