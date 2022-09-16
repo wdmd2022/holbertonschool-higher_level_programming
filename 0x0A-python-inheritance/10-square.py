@@ -42,3 +42,6 @@ class Square(Rectangle):
         self.__size = size
         super().__init__(size, size)
 
+    def area(self):
+        """this makes area square-specific"""
+        return self.__size ** 2
