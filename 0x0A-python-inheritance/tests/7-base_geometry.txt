@@ -6,7 +6,7 @@ Using ``BaseGeometry``
 
 This is an example test file in text format. First import
 ``BaseGeometry`` from the ``7-base_geometry`` module:
-    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry()
 
 Let's check that documentation for BaseGeometry:
     >>> print(BaseGeometry.__doc__)
