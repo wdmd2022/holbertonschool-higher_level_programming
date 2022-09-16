@@ -38,9 +38,7 @@ class Square(Rectangle):
     """this makes a subclass of Rectangle"""
     def __init__(self, size):
         """this initializes the square"""
-        self.integer_validator(size)
+        self.integer_validator("size", size)
         self.__size = size
-    
-    def area(self):
-        """this method returns the area"""
-        return self.__size * self.__size
+        super().__init__(size, size)
+
