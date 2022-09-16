@@ -48,3 +48,7 @@ Let's ensure that the documentation is there for the module:
     >>> moduledocstring = __import__("1-my_list").__doc__
     >>> len(moduledocstring) > 1
     True
+
+Let's check that documentation for MyList:
+    >>> print(MyList.__doc__)
+    a class that inherits from the list class
