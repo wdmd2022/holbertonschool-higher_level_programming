@@ -1,11 +1,11 @@
 The ``my_list`` module
 ==========================
 
-Using ``print_sorted``
+Using ``my_list``
 ---------------------
 
 This is an example test file in text format. First import
-``print_sorted`` from the ``1-my_list`` module:
+``MyList`` from the ``1-my_list`` module:
     >>> MyList = __import__('1-my_list').MyList
 
 Let's start off easy and give it an easy list:
