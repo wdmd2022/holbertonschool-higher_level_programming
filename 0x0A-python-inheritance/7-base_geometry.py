@@ -2,7 +2,7 @@
 """this module contains an definition of a class"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """this class is a base geometry class for class"""
     def area(self):
         """this method raises an exception"""
