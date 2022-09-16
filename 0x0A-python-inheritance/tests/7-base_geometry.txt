@@ -24,4 +24,3 @@ And let's give it a string instead of an int:
     >>> BaseGeometry.integer_validator("hey", "horses", "fore")
     Traceback (most recent call last):
     TypeError: <name> must be an integer
-
