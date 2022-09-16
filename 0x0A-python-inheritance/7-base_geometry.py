@@ -3,7 +3,7 @@
 
 
 class BaseGeometry():
-    """ Defines a class that will be used later """
+    """Defines a class that will be used later"""
     def area(self):
         """ method that raises an exception """
         raise Exception("area() is not implemented")

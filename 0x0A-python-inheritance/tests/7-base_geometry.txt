@@ -1,16 +1,16 @@
 The ``7-base_geometry`` module
-==========================
+==============================
 
 Using ``BaseGeometry``
 ---------------------
 
 This is an example test file in text format. First import
 ``BaseGeometry`` from the ``7-base_geometry`` module:
-    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry()
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Let's check that documentation for BaseGeometry:
-    >>> print(BaseGeometry.__doc__)
-    this class is a base geometry class for class
+    >>> print(BaseGeometry().__doc__)
+    Defines a class that will be used later
 
 Now let's fire up the integer validator:
     >>> BaseGeometry.integer_validator("hey", "horses", 4)
@@ -23,4 +23,4 @@ And let's feed it too few arguments:
 And let's give it a string instead of an int:
     >>> BaseGeometry.integer_validator("hey", "horses", "fore")
     Traceback (most recent call last):
-    TypeError: <name> must be an integer
+    TypeError: horses must be an integer
