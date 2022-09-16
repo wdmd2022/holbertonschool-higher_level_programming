@@ -15,6 +15,7 @@ class BaseGeometry():
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """this is a class to represent Rectangle objects"""
     def __init__(self, width, height):
@@ -23,11 +24,11 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.integer_validator("height", height)
         self.__height = height
-    
+
     def area(self):
         """returns area of the rectangle"""
         return self.__width * self.__height
-    
+
     def __str__(self):
         """makes the string representation"""
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
