@@ -3,6 +3,7 @@
 
 
 def read_file(filename=""):
+    """this function reads a file to stdout"""
     with open(filename, mode="r", encoding='UTF-8') as mr_file:
         for line in mr_file:
                 print("{}".format(line), end="")
