@@ -15,6 +15,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+
     @property
     def width(self):
         """getter for retrieving width of rectangle
@@ -24,7 +25,7 @@ class Rectangle(Base):
         """
 
         return self.__width
-    
+
     def width(self, value):
         """setter to set value of width of rectangle
 
@@ -32,7 +33,7 @@ class Rectangle(Base):
             value (int): width of the rectangle
 
         Raises:
-            ValueError: if there is a 0 or negative integer, which is a wild idea
+            ValueError: if there is a 0 or negative int, which is a wild idea
             TypeError: if value is not an integer at all -- even more wild
         """
         if type(value) == int:
@@ -52,7 +53,7 @@ class Rectangle(Base):
         """
 
         return self.__height
-    
+
     def height(self, value):
         """setter to set value of height of rectangle
 
@@ -60,7 +61,7 @@ class Rectangle(Base):
             value (int): height of the rectangle
 
         Raises:
-            ValueError: if there is a 0 or negative integer, which is a wild idea
+            ValueError: if there is a 0 or negative int, which is a wild idea
             TypeError: if value is not an integer at all -- even more wild
         """
         if type(value) == int:
@@ -80,7 +81,7 @@ class Rectangle(Base):
         """
 
         return self.__x
-    
+
     def x(self, value):
         """setter to set x value of rectangle
 
@@ -108,7 +109,7 @@ class Rectangle(Base):
         """
 
         return self.__y
-    
+
     def y(self, value):
         """setter to set y value of rectangle
 
