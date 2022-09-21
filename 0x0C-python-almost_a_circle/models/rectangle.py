@@ -140,5 +140,7 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def __str__(self):
-        stringywingy = "[Rectangle] (" + self.id + ") " + self.__x + "/" + \
-                        self.y + " - " + self.__width + "/" + self.__height
+        stringywingy = "[Rectangle] (" + str(self.id) + ") " + str(self.__x) \
+                       + "/" + str(self.y) + " - " + str(self.__width) + "/" \
+                                                          + str(self.__height)
+        return stringywingy
