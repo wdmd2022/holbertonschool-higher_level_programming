@@ -3,6 +3,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """this class represents a Rectangle object"""
     def __init__(self, width, height, x=0, y=0, id=None):
