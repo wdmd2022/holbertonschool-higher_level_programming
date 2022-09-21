@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """this module contains a Rectangle sub-class of Base"""
 
+from models.base import Base
 
 class Rectangle(Base):
     """this class represents a Rectangle object"""
