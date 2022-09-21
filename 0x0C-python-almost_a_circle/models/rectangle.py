@@ -7,11 +7,7 @@ class Rectangle(Base):
     """this class represents a Rectangle object"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """here we initialize the Rectangle"""
-        if id is not None:
-            self.id = id
-        else:
-            super().__nb_objects += 1
-            self.id = super().__nb_objects
+        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
