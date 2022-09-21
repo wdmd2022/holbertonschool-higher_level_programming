@@ -138,3 +138,7 @@ class Rectangle(Base):
         """method that draws a pretty rectangle"""
         for row in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        stringywingy = "[Rectangle] (" + self.id + ") " + self.__x + "/" + \
+                        self.y + " - " + self.__width + "/" + self.__height
