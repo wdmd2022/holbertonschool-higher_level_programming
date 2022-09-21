@@ -136,7 +136,10 @@ class Rectangle(Base):
 
     def display(self):
         """method that draws a pretty rectangle"""
+        for number in range(self.__y):
+            print("")
         for row in range(self.__height):
+            print("{}".format(" " * self.__x), end="")
             print("#" * self.__width)
 
     def __str__(self):
