@@ -143,7 +143,26 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def __str__(self):
+        """makes a cool string representation"""
         stringywingy = "[Rectangle] (" + str(self.id) + ") " + str(self.__x) \
                        + "/" + str(self.y) + " - " + str(self.__width) + "/" \
                                                           + str(self.__height)
         return stringywingy
+
+    def update(self, *args, **kwargs):
+        """updates values of the rectangle"""
+        if len(args):
+            for i in range(len(args)):
+                if i == 0:
+                    self.id = args[i]
+                if i == 1:
+                    self.width = args[i]
+                if i == 2:
+                    self.height = args[i]
+                if i == 3:
+                    self.x = args[i]
+                if i == 4:
+                    self.y = args[i]
+        else:
+            for attribute, value in kwargs.items():
+                setattr(self, attribute, value)
