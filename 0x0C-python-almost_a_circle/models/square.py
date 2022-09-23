@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """this module contains a Square (shaped, not termperaent) class"""
 
-from ctypes import sizeof
 from models.rectangle import Rectangle
+from models.base import Base
 
 
 class Square(Rectangle):
@@ -26,3 +26,19 @@ class Square(Rectangle):
         """sets size of square"""
         self.width = value
         self.height = value
+
+def update(self, *args, **kwargs):
+        """updates values of the square"""
+        if len(args):
+            for i in range(len(args)):
+                if i == 0:
+                    self.id = args[i]
+                if i == 1:
+                    self.size = args[i]
+                if i == 2:
+                    self.x = args[i]
+                if i == 3:
+                    self.y = args[i]
+        else:
+            for attribute, value in kwargs.items():
+                setattr(self, attribute, value)
