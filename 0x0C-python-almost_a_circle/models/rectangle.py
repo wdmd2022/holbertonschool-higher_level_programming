@@ -146,7 +146,7 @@ class Rectangle(Base):
         """makes a cool string representation"""
         stringywingy = "[Rectangle] (" + str(self.id) + ") " + str(self.__x) \
                        + "/" + str(self.y) + " - " + str(self.__width) + "/" \
-                                                          + str(self.__height)
+                       + str(self.__height)
         return stringywingy
 
     def update(self, *args, **kwargs):
