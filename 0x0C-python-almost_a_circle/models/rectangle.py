@@ -166,3 +166,13 @@ class Rectangle(Base):
         else:
             for attribute, value in kwargs.items():
                 setattr(self, attribute, value)
+
+    def to_dictionary(self):
+        """this method returns a dictionary representation"""
+        llcooldict = {}
+        llcooldict['x'] = self.x
+        llcooldict['y'] = self.y
+        llcooldict['id'] = self.id
+        llcooldict['height'] = self.height
+        llcooldict['width'] = self.width
+        return llcooldict
