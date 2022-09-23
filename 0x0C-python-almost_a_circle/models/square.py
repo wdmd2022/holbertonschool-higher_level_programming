@@ -42,3 +42,12 @@ class Square(Rectangle):
         else:
             for attribute, value in kwargs.items():
                 setattr(self, attribute, value)
+
+    def to_dictionary(self):
+        """this method returns a dictionary representation"""
+        llcooldict = {}
+        llcooldict['id'] = self.id
+        llcooldict['x'] = self.x
+        llcooldict['size'] = self.size
+        llcooldict['y'] = self.y
+        return llcooldict
