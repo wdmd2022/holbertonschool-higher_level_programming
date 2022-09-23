@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """this module contains a Square (shaped, not termperaent) class"""
 
-from models.base import Base
 from models.rectangle import Rectangle
 
 
