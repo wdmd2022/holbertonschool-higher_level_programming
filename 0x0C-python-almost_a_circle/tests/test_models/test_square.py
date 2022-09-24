@@ -33,19 +33,5 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s1.size, 1)
         self.assertEqual(s2.size, 2)
 
-    def test_square_width(self):
-        """test square width"""
-        s1 = Square(1)
-        s2 = Square(2)
-        self.assertEqual(s1.width, 1)
-        self.assertEqual(s2.width, 2)
-
-    def test_square_height(self):
-        """test square height"""
-        s1 = Square(1)
-        s2 = Square(2)
-        self.assertEqual(s1.height, 1)
-        self.assertEqual(s2.height, 2)
-
 if __name__ == "__main__":
     unittest.main()
