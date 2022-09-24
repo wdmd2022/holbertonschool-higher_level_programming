@@ -23,3 +23,14 @@ class Base():
             return "[]"
         else:
             return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """this method writes the JSON string rep of list_objs to a file"""
+        llcoollist = []
+        filename = cls.__name__ + ".json"
+        if list_objs is not None:
+            for item in list_objs:
+                llcoollist.append(cls.to_dictionary(item))
+        with open(filename, 'w', encoding="UTF-8") as thefile:
+            thefile.write(cls.to_json_string(llcoollist))
