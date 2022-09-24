@@ -43,3 +43,12 @@ class Base():
             return emptylist
         awesomelist = json.loads(json_string)
         return awesomelist
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == "Square":
+            dumbo = cls(123)
+        if cls.__name__ == "Rectangle":
+            dumbo = cls(123, 456)
+        dumbo.update(**dictionary)
+        return dumbo
