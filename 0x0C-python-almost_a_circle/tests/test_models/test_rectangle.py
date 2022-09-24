@@ -20,13 +20,5 @@ class TestRectangle(unittest.TestCase):
         """you gotta have docs"""
         self.assertTrue(len(Rectangle.__init__.__doc__) > 0)
 
-    def test_rec_id(self):
-        """test giving rectangle an id"""
-        Base._Base__nb_objects = 0
-        r1 = Rectangle(1, 1)
-        r2 = Rectangle(2, 2)
-        self.assertEqual(r1.id, 1)
-        self.assertEqual(r2.id, 2)
-        
 if __name__ == "__main__":
     unittest.main()
