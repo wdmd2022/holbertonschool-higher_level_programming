@@ -19,5 +19,12 @@ class TestSquare(unittest.TestCase):
         """even for init"""
         self.assertTrue(len(Square.__init__.__doc__) > 0)
 
+    def test_square_id(self):
+        """test giving square an id"""
+        s1 = Square(1)
+        s2 = Square(2)
+        self.assertEqual(s1.id, 1)
+        self.assertEqual(s2.id, 2)
+
 if __name__ == "__main__":
     unittest.main()
