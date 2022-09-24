@@ -3,7 +3,7 @@
 import unittest
 from models.square import Square
 
-class CheckSomething(unittest.TestCase):
+class TestSquare(unittest.TestCase):
     """this is a unittest class"""
     
     def test_for_module_documentation(self):
@@ -20,4 +20,3 @@ class CheckSomething(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-# ENDIF
