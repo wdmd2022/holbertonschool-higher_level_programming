@@ -60,8 +60,10 @@ class Base():
         filename = cls.__name__ + ".json"
         ll_cool_list = []
         try:
-            with open(filename, "r") as da_file:
-                ll_cool_list = cls.from_json_string(da_file.read())
+            with open(filename, "r") as f:
+                ll_cool_list = cls.from_json_string(f.read())
+                for index, item in enumerate(ll_cool_list):
+                    ll_cool_list[index] = cls.create(**ll_cool_list[index])
         except:
             return ll_cool_list
         return ll_cool_list
