@@ -60,7 +60,7 @@ class Base():
         filename = cls.__name__ + ".json"
         ll_cool_list = []
         try:
-            with open(filename, "r", encoding="UTF-8") as da_file:
+            with open(filename, "r") as da_file:
                 ll_cool_list = cls.from_json_string(da_file.read())
         except:
             return ll_cool_list
