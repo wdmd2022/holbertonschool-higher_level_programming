@@ -46,9 +46,22 @@ class Base():
 
     @classmethod
     def create(cls, **dictionary):
+        """creates a dummy object and updates using dictionary"""
         if cls.__name__ == "Square":
             dumbo = cls(123)
         if cls.__name__ == "Rectangle":
             dumbo = cls(123, 456)
         dumbo.update(**dictionary)
         return dumbo
+
+    @classmethod
+    def load_from_file(cls):
+        """"returns a list of instances"""
+        filename = cls.__name__ + ".json"
+        ll_cool_list = []
+        try:
+            with open(filename, "r", encoding="UTF-8") as da_file:
+                ll_cool_list = cls.from_json_string(da_file.read())
+        except:
+            return ll_cool_list
+        return ll_cool_list
