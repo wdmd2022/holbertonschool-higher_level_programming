@@ -18,6 +18,11 @@ class TestBase(unittest.TestCase):
     def test_for_init_documentation(self):
         """and docs for the init function"""
         self.assertTrue(len(Base.__init__.__doc__) > 0)
+    
+    def test_base_id(self):
+        """test giving base an id"""
+        b1 = Base(2)
+        self.assertEqual(b1.id, 2)
 
 if __name__ == "__main__":
     unittest.main()
