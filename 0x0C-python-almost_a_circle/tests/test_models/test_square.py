@@ -5,3 +5,7 @@ import unittest
 
 class CheckSomething(unittest.TestCase):
     """this is a unittest class"""
+
+if __name__ == "__main__":
+    unittest.main()
+# ENDIF
