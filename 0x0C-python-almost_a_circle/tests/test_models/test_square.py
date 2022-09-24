@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """this module contains unit tests for the square module"""
 import unittest
+from models import square
 from models.square import Square
 
 class TestSquare(unittest.TestCase):
