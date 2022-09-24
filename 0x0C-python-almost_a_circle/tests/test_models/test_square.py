@@ -26,5 +26,12 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s1.id, 1)
         self.assertEqual(s2.id, 2)
 
+    def test_square_size(self):
+        """test giving square a size"""
+        s1 = Square(1)
+        s2 = Square(2)
+        self.assertEqual(s1.size, 1)
+        self.assertEqual(s2.size, 2)
+        
 if __name__ == "__main__":
     unittest.main()
