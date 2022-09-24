@@ -34,3 +34,12 @@ class Base():
                 llcoollist.append(cls.to_dictionary(item))
         with open(filename, 'w', encoding="UTF-8") as thefile:
             thefile.write(cls.to_json_string(llcoollist))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """returns the list of the JSON string representation json_string"""
+        if json_string is None or len(json_string) == 0:
+            emptylist = []
+            return emptylist
+        awesomelist = json.loads(json_string)
+        return awesomelist
