@@ -6,15 +6,17 @@ from models.base import Base
 class TestBase(unittest.TestCase):
     """this is a unittest class"""
 
-    def test_for_module_documentation
-    """you gotta have docs"""
-    self.assertTrue(len(base.__doc__) > 0)
+    def test_for_module_documentation(self):
+        """you gotta have docs"""
+        self.assertTrue(len(base.__doc__) > 0)
 
-    def test_for_class_documentation
-    self.assertTrue(len(Base.__doc__) > 0)
+    def test_for_class_documentation(self):
+        """even for the class"""
+        self.assertTrue(len(Base.__doc__) > 0)
 
-    def test_for_init_documentation
-    self.assertTrue(len(Base.__init__.__doc__) > 0)
+    def test_for_init_documentation(self):
+        """and docs for the init function"""
+        self.assertTrue(len(Base.__init__.__doc__) > 0)
 
 if __name__ == "__main__":
     unittest.main()
