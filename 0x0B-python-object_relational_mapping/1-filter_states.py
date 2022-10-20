@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""this module contains a function that uses MySQLdb"""
+"""this module contains a function that prints states starting with N"""
 
 import MySQLdb
 import sys
@@ -12,3 +12,7 @@ if __name__ == '__main__':
     records = cur.fetchall()
     for record in records:
         print(record)
+    # Close all cursors
+    cur.close()
+    # Close all databases
+    db.close()
