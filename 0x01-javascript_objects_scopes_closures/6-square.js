@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const Square1 = require('./5-square.js');
 class Square extends Square1 {
-  constructor () {
-    super(size);
+  constructor (size) {
+    super(size, size);
   }
   charPrint (c = 'X') {
     let stringy = '';
@@ -14,3 +14,4 @@ class Square extends Square1 {
     }
   }
 }
+module.exports = Square
