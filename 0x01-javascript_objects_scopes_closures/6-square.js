@@ -1,6 +1,9 @@
 #!/usr/bin/node
 const Square1 = require('./5-square.js');
 class Square extends Square1 {
+  constructor () {
+    super(size);
+  }
   charPrint (c = 'X') {
     let stringy = '';
     for (let i = 0; i < this.width; i++) {
