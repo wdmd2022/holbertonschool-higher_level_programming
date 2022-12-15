@@ -6,6 +6,6 @@ if (length === 2) {
 if (length === 3) {
   console.log('Argument found');
 }
-if (length === 4) {
+else {
   console.log('Arguments found');
 }
