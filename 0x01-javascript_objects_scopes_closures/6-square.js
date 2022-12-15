@@ -4,6 +4,7 @@ class Square extends Square1 {
   constructor (size) {
     super(size, size);
   }
+
   charPrint (c = 'X') {
     let stringy = '';
     for (let i = 0; i < this.width; i++) {
@@ -14,4 +15,4 @@ class Square extends Square1 {
     }
   }
 }
-module.exports = Square
+module.exports = Square;
